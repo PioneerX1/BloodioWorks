@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z99-dJ-KBO">
+                                <rect key="frame" x="91.5" y="265.5" width="192" height="136"/>
+                                <state key="normal" image="redplay.png"/>
+                                <connections>
+                                    <action selector="PlayAudio:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bTd-Xe-nnN"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PRESS PLAY" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7PI-VB-9Wz">
+                                <rect key="frame" x="86" y="170" width="203" height="44.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="37"/>
+                                <color key="textColor" red="0.068702960359999996" green="0.9602291127" blue="0.94515838539999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Z99-dJ-KBO" firstAttribute="top" secondItem="7PI-VB-9Wz" secondAttribute="bottom" constant="50.833333333333314" id="IwL-hu-56f"/>
+                            <constraint firstItem="Z99-dJ-KBO" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="hi5-IS-t4I"/>
+                            <constraint firstItem="Z99-dJ-KBO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nF1-Oi-tA3"/>
+                            <constraint firstItem="7PI-VB-9Wz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yu4-7Z-Kzn"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-263" y="54"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="redplay.png" width="192" height="136"/>
+    </resources>
+</document>
