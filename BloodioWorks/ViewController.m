@@ -19,6 +19,7 @@
     NSURL *SoundURL = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"rfkonmlk" ofType:@"mp3"]];
     AudioServicesCreateSystemSoundID((__bridge CFURLRef)SoundURL, &SoundID);
     avSound = [[AVAudioPlayer alloc] initWithContentsOfURL:SoundURL error:nil];
+    [avSound setDelegate:self];
 }
 
 

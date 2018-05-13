@@ -19,6 +19,7 @@
 		D79FCF5820A7A79B006F5CFC /* rfkonmlk.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D79FCF5520A7A79B006F5CFC /* rfkonmlk.mp3 */; };
 		D79FCF5920A7A79B006F5CFC /* redplay.png in Resources */ = {isa = PBXBuildFile; fileRef = D79FCF5620A7A79B006F5CFC /* redplay.png */; };
 		D79FCF5A20A7A79B006F5CFC /* sample_guitar.wav in Resources */ = {isa = PBXBuildFile; fileRef = D79FCF5720A7A79B006F5CFC /* sample_guitar.wav */; };
+		D7ECE4BD20A7CB7700CC50A9 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7ECE4BC20A7CB7700CC50A9 /* AudioToolbox.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,8 @@
 		D79FCF5520A7A79B006F5CFC /* rfkonmlk.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = rfkonmlk.mp3; sourceTree = "<group>"; };
 		D79FCF5620A7A79B006F5CFC /* redplay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = redplay.png; sourceTree = "<group>"; };
 		D79FCF5720A7A79B006F5CFC /* sample_guitar.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = sample_guitar.wav; sourceTree = "<group>"; };
+		D7ECE4BC20A7CB7700CC50A9 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		D7ECE4BE20A7CB7700CC50A9 /* BloodioWorks.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BloodioWorks.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +70,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D79FCF5320A7A707006F5CFC /* AVFoundation.framework in Frameworks */,
+				D7ECE4BD20A7CB7700CC50A9 /* AudioToolbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -111,6 +115,7 @@
 		D79FCF1E20A7A6E6006F5CFC /* BloodioWorks */ = {
 			isa = PBXGroup;
 			children = (
+				D7ECE4BE20A7CB7700CC50A9 /* BloodioWorks.entitlements */,
 				D79FCF5420A7A780006F5CFC /* Supporting Files */,
 				D79FCF1F20A7A6E6006F5CFC /* AppDelegate.h */,
 				D79FCF2020A7A6E6006F5CFC /* AppDelegate.m */,
@@ -146,6 +151,7 @@
 		D79FCF5120A7A707006F5CFC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D7ECE4BC20A7CB7700CC50A9 /* AudioToolbox.framework */,
 				D79FCF5220A7A707006F5CFC /* AVFoundation.framework */,
 			);
 			name = Frameworks;
@@ -228,6 +234,14 @@
 				TargetAttributes = {
 					D79FCF1B20A7A6E6006F5CFC = {
 						CreatedOnToolsVersion = 9.3;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.InterAppAudio = {
+								enabled = 1;
+							};
+						};
 					};
 					D79FCF3320A7A6E7006F5CFC = {
 						CreatedOnToolsVersion = 9.3;
@@ -465,6 +479,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = BloodioWorks/BloodioWorks.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HF535HYDDT;
 				INFOPLIST_FILE = BloodioWorks/Info.plist;
@@ -482,6 +497,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = BloodioWorks/BloodioWorks.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HF535HYDDT;
 				INFOPLIST_FILE = BloodioWorks/Info.plist;
