@@ -20,6 +20,7 @@
 		D79FCF5920A7A79B006F5CFC /* redplay.png in Resources */ = {isa = PBXBuildFile; fileRef = D79FCF5620A7A79B006F5CFC /* redplay.png */; };
 		D79FCF5A20A7A79B006F5CFC /* sample_guitar.wav in Resources */ = {isa = PBXBuildFile; fileRef = D79FCF5720A7A79B006F5CFC /* sample_guitar.wav */; };
 		D7ECE4BD20A7CB7700CC50A9 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7ECE4BC20A7CB7700CC50A9 /* AudioToolbox.framework */; };
+		D7ECE4C420ABEC2300CC50A9 /* Story Booth Audio _FNL.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D7ECE4C320ABEC2300CC50A9 /* Story Booth Audio _FNL.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,7 @@
 		D79FCF5720A7A79B006F5CFC /* sample_guitar.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = sample_guitar.wav; sourceTree = "<group>"; };
 		D7ECE4BC20A7CB7700CC50A9 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		D7ECE4BE20A7CB7700CC50A9 /* BloodioWorks.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BloodioWorks.entitlements; sourceTree = "<group>"; };
+		D7ECE4C320ABEC2300CC50A9 /* Story Booth Audio _FNL.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Story Booth Audio _FNL.mp3"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +162,7 @@
 		D79FCF5420A7A780006F5CFC /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D7ECE4C320ABEC2300CC50A9 /* Story Booth Audio _FNL.mp3 */,
 				D79FCF5620A7A79B006F5CFC /* redplay.png */,
 				D79FCF5520A7A79B006F5CFC /* rfkonmlk.mp3 */,
 				D79FCF5720A7A79B006F5CFC /* sample_guitar.wav */,
@@ -279,6 +282,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D79FCF5920A7A79B006F5CFC /* redplay.png in Resources */,
+				D7ECE4C420ABEC2300CC50A9 /* Story Booth Audio _FNL.mp3 in Resources */,
 				D79FCF2C20A7A6E7006F5CFC /* LaunchScreen.storyboard in Resources */,
 				D79FCF5A20A7A79B006F5CFC /* sample_guitar.wav in Resources */,
 				D79FCF2920A7A6E7006F5CFC /* Assets.xcassets in Resources */,

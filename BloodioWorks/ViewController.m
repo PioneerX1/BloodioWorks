@@ -16,7 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    NSURL *SoundURL = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"rfkonmlk" ofType:@"mp3"]];
+    NSURL *SoundURL = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"Story Booth Audio _FNL" ofType:@"mp3"]];
     AudioServicesCreateSystemSoundID((__bridge CFURLRef)SoundURL, &SoundID);
     avSound = [[AVAudioPlayer alloc] initWithContentsOfURL:SoundURL error:nil];
     [avSound setDelegate:self];
