@@ -32,9 +32,25 @@
 - (IBAction)PlayAudio:(id)sender {
     AudioServicesPlaySystemSound(SoundID);
     if ([avSound isPlaying]) {
-        [avSound stop];
+        // [avSound stop];
     } else {
         [avSound play];
     }
+}
+
+- (IBAction)PauseAudio:(id)sender {
+    AudioServicesPlaySystemSound(SoundID);
+    if ([avSound isPlaying]) {
+        [avSound stop];
+    } else {
+        // already paused or not playing
+    }
+}
+
+- (IBAction)RestartAudio:(id)sender {
+    AudioServicesPlaySystemSound(SoundID);
+    avSound.currentTime=0;
+    [avSound play];
+    
 }
 @end

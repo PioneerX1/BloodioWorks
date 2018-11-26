@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -18,36 +18,93 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z99-dJ-KBO">
-                                <rect key="frame" x="91.5" y="265.5" width="192" height="136"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z99-dJ-KBO">
+                                <rect key="frame" x="117" y="107" width="140" height="92"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="92" id="iSi-I6-xQt"/>
+                                </constraints>
                                 <state key="normal" image="redplay.png"/>
                                 <connections>
                                     <action selector="PlayAudio:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bTd-Xe-nnN"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PRESS PLAY" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7PI-VB-9Wz">
-                                <rect key="frame" x="86" y="170" width="203" height="44.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PLAY" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7PI-VB-9Wz">
+                                <rect key="frame" x="142" y="42" width="90" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="aRS-vc-r8e"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="37"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="PAUSE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mfG-3w-94d">
+                                <rect key="frame" x="128" y="235" width="113" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="mgc-xT-5Jf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="37"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="RESTART" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i43-gq-ho0">
+                                <rect key="frame" x="111" y="444" width="153" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="BNT-wi-0m8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="37"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4QG-wQ-9e4">
+                                <rect key="frame" x="128" y="497" width="122" height="117"/>
+                                <state key="normal" title="Button" image="redrestart3.jpeg"/>
+                                <connections>
+                                    <action selector="RestartAudio:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tEA-r8-ORR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nGM-JU-6Xz">
+                                <rect key="frame" x="129" y="305" width="116" height="102"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="88" id="5R1-F6-gsz"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="pause2.png"/>
+                                <connections>
+                                    <action selector="PauseAudio:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9hz-vi-ZHr"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="7PI-VB-9Wz" firstAttribute="centerX" secondItem="mfG-3w-94d" secondAttribute="centerX" id="2SU-Jf-zZY"/>
+                            <constraint firstItem="i43-gq-ho0" firstAttribute="top" secondItem="nGM-JU-6Xz" secondAttribute="bottom" constant="49" id="3Ad-cE-4VP"/>
+                            <constraint firstItem="7PI-VB-9Wz" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="22" id="5N5-M3-Los"/>
+                            <constraint firstItem="4QG-wQ-9e4" firstAttribute="top" secondItem="i43-gq-ho0" secondAttribute="bottom" constant="8" id="CoT-mm-CQ5"/>
+                            <constraint firstItem="mfG-3w-94d" firstAttribute="trailing" secondItem="4QG-wQ-9e4" secondAttribute="trailing" id="GFS-3A-aRV"/>
+                            <constraint firstItem="Z99-dJ-KBO" firstAttribute="centerX" secondItem="4QG-wQ-9e4" secondAttribute="centerX" id="Gwu-WW-UaT"/>
                             <constraint firstItem="Z99-dJ-KBO" firstAttribute="top" secondItem="7PI-VB-9Wz" secondAttribute="bottom" constant="50.833333333333314" id="IwL-hu-56f"/>
-                            <constraint firstItem="Z99-dJ-KBO" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="hi5-IS-t4I"/>
-                            <constraint firstItem="Z99-dJ-KBO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nF1-Oi-tA3"/>
-                            <constraint firstItem="7PI-VB-9Wz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yu4-7Z-Kzn"/>
+                            <constraint firstItem="Z99-dJ-KBO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="117" id="Ptv-5I-S7v"/>
+                            <constraint firstItem="mfG-3w-94d" firstAttribute="top" secondItem="Z99-dJ-KBO" secondAttribute="bottom" constant="36" id="eG1-Dt-fJI"/>
+                            <constraint firstItem="Z99-dJ-KBO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eyv-em-5DJ"/>
+                            <constraint firstItem="mfG-3w-94d" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="128" id="fnl-vA-O55"/>
+                            <constraint firstItem="7PI-VB-9Wz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="142" id="gcC-io-jB1"/>
+                            <constraint firstItem="nGM-JU-6Xz" firstAttribute="top" secondItem="mfG-3w-94d" secondAttribute="bottom" constant="27" id="hmG-mR-sw4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="4QG-wQ-9e4" secondAttribute="bottom" constant="53" id="lls-1C-wac"/>
+                            <constraint firstItem="nGM-JU-6Xz" firstAttribute="centerX" secondItem="i43-gq-ho0" secondAttribute="centerX" id="mJM-Q9-p7A"/>
+                            <constraint firstItem="Z99-dJ-KBO" firstAttribute="centerX" secondItem="7PI-VB-9Wz" secondAttribute="centerX" id="rlD-jV-C3H"/>
+                            <constraint firstItem="7PI-VB-9Wz" firstAttribute="leading" secondItem="nGM-JU-6Xz" secondAttribute="leading" id="uSu-6J-aYV"/>
+                            <constraint firstItem="Z99-dJ-KBO" firstAttribute="centerX" secondItem="nGM-JU-6Xz" secondAttribute="centerX" id="xb7-sv-1SG"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-263" y="54"/>
+            <point key="canvasLocation" x="-263.19999999999999" y="53.523238380809602"/>
         </scene>
     </scenes>
     <resources>
+        <image name="pause2.png" width="178" height="178"/>
         <image name="redplay.png" width="192" height="136"/>
+        <image name="redrestart3.jpeg" width="225" height="225"/>
     </resources>
 </document>

@@ -15,6 +15,8 @@
 }
 
 - (IBAction)PlayAudio:(id)sender;
+- (IBAction)PauseAudio:(id)sender;
+- (IBAction)RestartAudio:(id)sender;
 
 @end
 
